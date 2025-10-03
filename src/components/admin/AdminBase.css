@@ -1,0 +1,83 @@
+/* AdminBase.css */
+
+/* Ensure the whole page layout has a full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed header */
+    top: 0; /* Align with top */
+    left: 0; /* Align with left */
+    z-index: 1; /* Ensure it is above other content */
+}
+
+.dashboard-container {
+    display: flex;
+    margin-top: 80px; /* Adjust to fit the header */
+    height: calc(100% - 80px); /* Adjust height to fit below the header */
+}
+
+.sidebar {
+    width: 250px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-right: 2px solid #ddd; /* Light border between sidebar and content */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for visual separation */
+    position: fixed; /* Keep the sidebar fixed */
+    top: 80px; /* Start below the header */
+    bottom: 0; /* Extend to the bottom of the viewport */
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logout-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f44336; /* Red color for logout */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 270px; /* Adjust to fit the sidebar width and padding */
+    padding: 20px;
+    flex: 1;
+    overflow: auto; /* Scroll if content overflows */
+}
