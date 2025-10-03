@@ -1,4 +1,4 @@
-# GYM GKO 🏋️‍♂️
+# GYMΜ-GKOTSO 🏋️‍♂️
 
 **University Project – Web Application**
 
